@@ -1,13 +1,11 @@
-// Variables
 $website-width: 1280px;
 $main-color: #ffbc00;
 $light-color: #f4f4f4;
 $dark-color: #333;
 $medium-color: #ccc;
-$bg-image: url('../img/showcase.jpg'); //pamiętac że lokalizacja nie idzie od pliku scss tylko od pliku css w folderze disc/css
+$projects-color: #51036C;
+$bg-image: url('../img/showcase2.jpg');
 
-
-//Set text color
 
 @function set-text-color($color) {
   @if(lightness($color) > 50) {
