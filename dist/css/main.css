@@ -329,12 +329,19 @@ img {
   #header-home {
     height: 30rem; }
     #header-home .header-content {
-      padding-top: 5rem; } }
+      padding-top: 5rem; }
+  .empty {
+    display: none; } }
 
 @media (max-width: 500px) {
+  #logo {
+    display: none; }
   #main-nav {
     flex-direction: column;
     align-items: center; }
+    #main-nav ul {
+      display: flex;
+      flex-wrap: wrap; }
     #main-nav li {
       padding: 1rem; }
   #header-home {
@@ -345,25 +352,20 @@ img {
       display: none; }
   #header-inner {
     height: 10rem; }
-  #home-a .specials,
-  #home-b .stats,
-  #home-c .process,
-  #about-d .testimonials,
   #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr; }
-  #home-a .specials div {
-    border-bottom: 1px #f4f4f4 solid;
-    padding-bottom: 1rem; }
-    #home-a .specials div:last-child {
-      border: none;
-      padding-bottom: 0; }
-  #home-b .stats div {
-    padding: 2rem 0 1rem 0; }
   #about-a .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
+    grid-template-areas: 'bioimage' 'bio'; }
   #about-a .bio {
     border: none; }
+  #about-b .about-logos {
+    display: grid;
+    grid-template-columns: 1fr; }
+    #about-b .about-logos img {
+      display: inline-block;
+      margin: auto;
+      transform: scale(0.5); }
   #about-c {
     display: none; }
   #contact-a .text-fields {

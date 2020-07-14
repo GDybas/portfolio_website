@@ -9,14 +9,28 @@
     }
 
   }
+
+  //hiding empty projects
+  .empty {
+    display: none;
+  }
 }
 
 
 //smartphones
 @media(max-width: 500px) {
+  #logo {
+    display: none;
+  }
+
   #main-nav {
     flex-direction: column;
     align-items: center;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
     li {
       padding: 1rem;
@@ -40,38 +54,11 @@
   }
 
   // Stack Grid Columns
-  #home-a .specials,
-  #home-b .stats,
-  #home-c .process,
-  #about-d .testimonials,
   #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr;
   }
 
-
-  // Home 
-
-  #home {
-    &-a {
-      .specials div {
-        border-bottom: 1px $light-color solid;
-        padding-bottom: 1rem;
-
-        &:last-child {
-          border: none;
-          padding-bottom: 0;
-        }
-
-      }
-    }
-
-    &-b {
-      .stats div {
-        padding: 2rem 0 1rem 0;
-      }
-    }
-  }
 
   // About
 
@@ -81,9 +68,6 @@
         grid-template-areas:
           'bioimage'
           'bio'
-          'aw1'
-          'aw2'
-          'aw3'
       }
 
       .bio {
@@ -91,10 +75,26 @@
       }
     }
 
+    &-b {
+      .about-logos {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        img {
+          display: inline-block;
+          margin: auto;
+          transform: scale(0.5);
+        }
+      }
+
+    }
+
     &-c {
       display: none;
     }
   }
+
+
 
   // Contact 
   #contact {
