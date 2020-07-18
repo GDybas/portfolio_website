@@ -47,18 +47,12 @@ img {
   justify-content: space-between;
   padding-top: 1rem;
 
-
-
   ul {
     display: flex;
 
     li {
       padding: 1rem 1.5rem;
     }
-
-
-
-
 
     a {
       text-decoration: none;
@@ -79,12 +73,9 @@ img {
   }
 }
 
-
-
 //Header
 
 #header {
-
   //header home
   &-home {
     background: $bg-image no-repeat center right / cover;
@@ -116,8 +107,7 @@ img {
   &-a {
     .about-info {
       display: grid;
-      grid-template-areas:
-        "bioimage bio bio";
+      grid-template-areas: "bioimage bio bio";
       grid-gap: 1.2rem;
     }
 
@@ -157,12 +147,11 @@ img {
     .text-fields {
       display: grid;
       grid-template-areas:
-        'name email'
-        'subject phone'
-        'message message';
+        "name email"
+        "subject phone"
+        "message message";
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
-
 
       //Grid areas
       .name-input {
@@ -189,10 +178,9 @@ img {
       .text-input {
         padding: 0.5rem 1rem;
       }
-
     }
 
-    button[type='submit'] {
+    button[type="submit"] {
       width: 40%;
     }
   }
@@ -222,7 +210,7 @@ img {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #5F5F5F;
+  background-color: #5f5f5f;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -232,7 +220,6 @@ img {
 
 #myBtn:hover {
   background-color: $main-color;
-
 }
 
 // Footer
@@ -269,7 +256,6 @@ img {
     }
   }
 }
-
 
 // Importing media queries
 @import "media";
